@@ -1,0 +1,24 @@
+@import "../../../../assets/_scss/variables.scss";
+p {
+  color: $gray;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.bx {
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.bx:hover {
+  background: $softOrange;
+  color: $orange;
+}
+
+::ng-deep.mat-menu-content {
+  padding: 1rem !important;
+}

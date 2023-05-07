@@ -1,0 +1,301 @@
+@import "./assets/_scss/variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $nunito !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mat-elevation-z8 {
+  margin-top: 1rem;
+}
+
+.mat-header-cell {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.full-width-field {
+  width: 100%;
+}
+
+.container-filters {
+  margin-top: 1rem;
+}
+
+.container-search {
+  width: 300px;
+  background: $white;
+  padding: 0.5rem 0.4rem;
+  border-radius: 0.5rem;
+  input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    margin-left: 0.6rem;
+    width: 100%;
+  }
+}
+
+.item {
+  margin: 0.5rem 0;
+  transition: all 0.1s ease-in;
+}
+
+.item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: $orange;
+  transition: width 0.3s;
+}
+
+.item:hover::after {
+  width: 100%;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.p-sides {
+  padding: 1rem 1.5rem;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0.3rem;
+  margin: 0 0.1rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.bt-block {
+  width: 100%;
+}
+
+.btn-primary {
+  background: $primary;
+  color: $white;
+}
+
+.btn-primary:disabled {
+  background: $darkBlue;
+}
+
+.btn-primary-outlined {
+  border: 1px solid $primary;
+  color: $primary;
+  background: $white;
+}
+
+.btn-primary-outlined:disabled {
+  color: $darkBlue;
+  border-color: $darkBlue;
+}
+
+.btn-excel {
+  color: $primary;
+  background: transparent;
+  font-size: 1.4rem;
+  padding-right: 0.5rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  transition: all ease-in 0.3s;
+}
+
+.btn-excel:hover {
+  background: $primary;
+  color: $white;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.min-card {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.f-bold {
+  font-weight: bold;
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.container-menu {
+  background: $white;
+  margin-top: 12px;
+  padding: 10px 4px;
+  border-radius: 2px;
+  min-height: 90%;
+}
+
+.mat-row {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+table th.mat-header-cell {
+  text-align: center;
+}
+
+.action-table {
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-red {
+  color: $danger;
+}
+
+.box {
+  border: 2px solid $gray;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  .bx {
+    margin-right: 0.8rem;
+  }
+  input {
+    border: 0;
+    background: transparent;
+    width: 90%;
+    outline: none;
+  }
+}
+
+.btn-login {
+  background: $darkBlue;
+  color: $white;
+  border: 1px solid $darkBlue;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.btn-login:hover {
+  background: $white;
+  color: $darkBlue;
+}
+
+.btn-login:disabled {
+  background: $gray;
+  border-color: $gray;
+}
+
+.btn-login:disabled:hover {
+  color: $white;
+}
+
+.mat-step-icon-content .mat-icon {
+  display: none !important;
+}
+
+ul {
+  display: contents;
+  list-style: none;
+}
+
+.mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-header .mat-step-icon-state-edit {
+  background-color: $orange !important;
+}
+
+.btn-file {
+  border: 1px solid $darkBlue;
+  background: $white;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.bg-orange {
+  background: $orange;
+}
+
+.noBroken {
+  word-break: break-all;
+}
+
+.Activo {
+  color: $success;
+}
+
+.Inactivo {
+  color: $danger;
+}
+
+.alert {
+  position: fixed;
+  top: 1rem;
+  right: 0.5rem;
+  background: $orange;
+  color: $white;
+  border-radius: 0.5rem;
+}
+
+.mat-radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+  margin: 0.5rem 0;
+}

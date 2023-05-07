@@ -1,0 +1,25 @@
+<div class="container-login">
+  <div class="container-form shadow">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <h1>Bienvenid@</h1>
+      <p>Ingresa sesión con tu correo y contraseña</p>
+      <mat-form-field appearance="legacy" class="full-width-field">
+        <mat-label>Correo</mat-label>
+        <input type="text" matInput formControlName="email" required />
+        <mat-error>Este campo es requerido</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="legacy" class="full-width-field">
+        <mat-label>Contraseña</mat-label>
+        <input type="password" matInput formControlName="password" required />
+        <mat-error>Este campo es requerido</mat-error>
+      </mat-form-field>
+      <button
+        type="submit"
+        [disabled]="loginForm.invalid"
+        class="btn btn-primary-outlined bt-block"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>

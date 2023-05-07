@@ -1,0 +1,16 @@
+@import "../../../assets/_scss/variables.scss";
+.container-login {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 2rem;
+  background: $darkBlue;
+}
+
+.container-form {
+  background: $white;
+  height: auto;
+  width: 500px;
+  border-radius: 5px;
+  padding: 10px;
+}

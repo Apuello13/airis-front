@@ -1,0 +1,32 @@
+<div class="title-sidebar p-sides text-center">
+  <img
+    routerLink="/home"
+    src="../../../../assets/img/logo.png"
+    class="pointer"
+    alt="Logo Angular"
+  />
+</div>
+<mat-accordion>
+  <div class="p-sides">
+    <ul>
+      <mat-expansion-panel *ngFor="let menu of menus" class="dropdown-sidebar">
+        <mat-expansion-panel-header>
+          <li class="pointer" routerLinkActive="active">
+            <i [class]="menu.icon"></i>
+            <a>{{ menu.name }}</a>
+          </li>
+        </mat-expansion-panel-header>
+        <ul>
+          <li *ngFor="let children of menu.childrens">
+            <a
+              [routerLink]="children.path"
+              class="pointer"
+              routerLinkActive="sub-active"
+              >{{ children.name }}</a
+            >
+          </li>
+        </ul>
+      </mat-expansion-panel>
+    </ul>
+  </div>
+</mat-accordion>

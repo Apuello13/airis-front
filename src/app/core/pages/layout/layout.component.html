@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="sidebar">
+    <app-sidebar id="sidebar"></app-sidebar>
+  </div>
+  <div id="sidebar-mobile">
+    <i class="bx bx-menu pointer"></i>
+    <ul>
+      <li><i class="bx bxs-home-alt-2"></i></li>
+    </ul>
+  </div>
+  <div class="main p-sides">
+    <app-header></app-header>
+    <div class="content p-sides"><router-outlet></router-outlet></div>
+    <app-footer class="p-sides"></app-footer>
+  </div>
+</div>

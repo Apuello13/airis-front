@@ -1,0 +1,7 @@
+<app-title name="Ventas"></app-title>
+<app-table
+  [rows]="sales"
+  [actions]="actions"
+  [columns]="columns"
+  (sendEvent)="getEvent($event)"
+></app-table>
