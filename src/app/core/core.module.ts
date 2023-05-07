@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { LayoutComponent } from './pages/layout/layout.component';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -14,5 +15,6 @@ import { LayoutComponent } from './pages/layout/layout.component';
     LayoutComponent,
   ],
   imports: [SharedModule, MaterialModule],
+  providers: [AuthGuard],
 })
 export class CoreModule {}
